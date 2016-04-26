@@ -9,14 +9,15 @@ set +o noclobber
 #       100,200,300,400,600
 #
 
+device=$1;
 
-device=$1
+
 
 dir=$(dirname "$0")
 . $dir/functions.sh
 
 scan_wait
 
-jpg=$(scan_to_image)
-send_to_paperless "$jpg"
+scan_to_image
 
+echo "Page added"
