@@ -15,7 +15,7 @@ merge_pages () {
     convert ~/brscan/*.jpg "$merge_output_file" 2>&1 >/dev/null
     if [ $? -eq 0 ]
     then
-        rm -rf ~/brscan/*.jpgx;
+        rm -rf ~/brscan/*.jpg;
     fi
 
     echo "$merge_output_file";
