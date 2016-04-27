@@ -15,7 +15,7 @@ The purpose of the modification is to use the scan to OCR button of the scanner 
 The file is then copied on the consumer folder of the [paperless](https://github.com/danielquinn/paperless) application on the NAS.
 
 
-## scanner/brscan-skey
+## /scanner/brscan-skey
 
 `brscan-skey.cfg` config file example, this file should be named with the version number, it replace the default script with the one provided in this package.
 
