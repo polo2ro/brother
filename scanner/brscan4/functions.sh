@@ -12,7 +12,7 @@ scan_wait () {
 
 merge_pages () {
     merge_output_file=~/brscan/"Scan - "`date +%Y%m%d%H%M%S`".pdf"
-    convert ~/brscan/*.jpg "$merge_output_file" 2>&1 >/dev/null
+    convert -density 300 ~/brscan/*.jpg "$merge_output_file" 2>&1 >/dev/null
     if [ $? -eq 0 ]
     then
         rm -rf ~/brscan/*.jpg;
